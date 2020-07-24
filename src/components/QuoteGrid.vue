@@ -10,7 +10,7 @@
     export default {
         props: ['quotes'],
         components: {                   // register the single quote
-            appQuote: Quote             // assign appQuote as a Selector, then use it in template <appQuote></appQuote>
+            appQuote: Quote             // assign appQuote as a Selector, then use it in template "<appQuote></appQuote>""
         }
     }
 </script>
