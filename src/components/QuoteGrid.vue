@@ -1,13 +1,18 @@
 <template>
     <div class="row">
-        
+        <app-quote v-for="quote in quotes">{{ quote }}</app-quote>
     </div>
 </template>
 
 <script>
-export default {
-    props: ['quotes']
-}
+    import Quote from './Quote.vue';    // the single quote
+
+    export default {
+        props: ['quotes'],
+        components: {                   // register the single quote
+            appQuote: Quote             // assign appQuote as a Selector, then use it in template <appQuote></appQuote>
+        }
+    }
 </script>
 
 <style>
