@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <app-header></app-header>
+        <app-header :quoteCount="quotes.length" :maxQuotes="maxQuotes"></app-header>       <!-- quotes.length = arraylength -->
         <app-new-quote @quoteAdded="newQuote"></app-new-quote>
         <app-quote-grid :quotes="quotes" @quoteDeleted="deleteQuote"></app-quote-grid>     <!-- add property :quote="quotes" (v-bind) expecting props in QuoteGrid.vue passing array in it -->
         <div class="row">
@@ -36,7 +36,7 @@
         components: {
             appQuoteGrid: QuoteGrid,
             appNewQuote: NewQuote,
-            appHeader: AppHeader
+            appHeader: Header
         }
     }
 </script>
