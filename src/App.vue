@@ -20,7 +20,7 @@
         data: function() {
             return {
                 quotes: [
-                    'This is an example Quote.'
+                    'Example Quote.'
                 ],
                 maxQuotes: 10                       // track the max number of Quotes
             }
